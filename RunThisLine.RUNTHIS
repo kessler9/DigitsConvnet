@@ -1,0 +1,1 @@
+./flush.sh; python OneLayer5x5_8000-600_relu6_Adagrad_MNIST_Convnet.py; python testall.py > result0.txt; ./flush.sh ; python OneLayer6x6_8000-600_relu_Adagrad_MNIST_Convnet.py ; python testall.py > result1.txt

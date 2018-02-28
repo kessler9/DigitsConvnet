@@ -1,0 +1,12 @@
+#!/bin/bash
+rm -rf MNIST-data
+rm -rf MNIST-Model
+
+python MNIST_Convnet.py &
+
+$(./YesBomb.sh 50) &
+GPUFAN=`nvidia-smi | grep -Eo "[0-9]{1,3}%"`
+CPUFAN=`sensors | grep "CPU Fan Speed" | grep -oE "[1-5][0-9]{3}"
+
+echo "GPU FAN SPEED: " $GPUFAN
+echo "CPU FAN SPEED: " $CPUFAN

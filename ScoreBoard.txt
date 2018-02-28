@@ -1,0 +1,48 @@
+0.0085 600/4000 Adagrad 2-DenseLayer Dropout=0.75 6x6 Kernel relu
+{'loss': 0.03895117, 'global_step': 4000, 'accuracy': 0.98790002}
+CONVNET TOOK 306.754261017s TO TRAIN ***PASSED TEST***
+
+0.0085 600/8000 Adagrad 2-DenseLayer Dropout=0.875 6x6 Kernel relu
+{'loss': 0.033404469, 'global_step': 8000, 'accuracy': 0.9892}
+CONVNET TOOK 616.549111843s TO TRAIN ***FAILED TEST BY 1 CLASSIFICATION*** 4
+
+0.0125 600/4000 SGD 2-DenseLayer Dropout=0.75 6x6 Kernel relu
+{'loss': 0.064573079, 'global_step': 4000, 'accuracy': 0.97899997}
+CONVNET TOOK 308.7533319s TO TRAIN ***FAILED TEST BY 1 CLASSIFICATION*** 4
+
+0.0125 600/8000 SGD 2-DenseLayer Dropout=0.875 6x6 Kernel relu
+{'loss': 0.048022237, 'global_step': 8000, 'accuracy': 0.98500001}
+CONVNET TOOK 603.965181828s TO TRAIN ***FAILED TEST BY 1 CLASSIFICATION*** 4
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+0.0085 600/4000 Adagrad 1-DenseLayer Dropout=0.5 6x6 Kernel relu
+
+0.0085 600/8000 Adagrad 1-DenseLayer Dropout=0.75 6x6 Kernel relu
+
+0.0125 600/4000 SGD 1-DenseLayer Dropout=0.5 6x6 Kernel relu
+
+0.0125 600/8000 SGD 1-DenseLayer Dropout=0.75 6x6 Kernel relu
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+
+0.0085 600/4000 Adagrad 2-DenseLayer Dropout=0.75 5x5 Kernel relu6
+
+0.0085 600/8000 Adagrad 2-DenseLayer Dropout=0.875 5x5 Kernel relu6
+
+0.0125 600/4000 SGD 2-DenseLayer Dropout=0.75 5x5 Kernel relu6
+
+0.0125 600/8000 SGD 2-DenseLayer Dropout=0.875 5x5 Kernel relu6
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+0.0085 600/4000 Adagrad 1-DenseLayer Dropout=0.5 5x5 Kernel relu6
+
+0.0085 600/8000 Adagrad 1-DenseLayer Dropout=0.75 5x5 Kernel relu6
+
+0.0125 600/4000 SGD 1-DenseLayer Dropout=0.5 5x5 Kernel relu6
+
+0.0125 600/8000 SGD 1-DenseLayer Dropout=0.75 5x5 Kernel relu6
