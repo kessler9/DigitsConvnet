@@ -106,8 +106,8 @@ def main(unused_argv):
   mnist_classifier.fit(
     x=train_data,
     y=train_labels,
-    batch_size=500,
-    steps=2000,
+    batch_size=400,
+    steps=1000,
     monitors=[logging_hook]
   )
   metrics = {
