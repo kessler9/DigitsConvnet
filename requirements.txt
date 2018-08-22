@@ -1,2 +1,9 @@
 tornado
-tensorflow
+tensorflow-gpu
+psycopg2-binary
+selenium
+bs4
+requests
+scipy
+pillow
+scipy
