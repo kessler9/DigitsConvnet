@@ -6,4 +6,3 @@ bs4
 requests
 scipy
 pillow
-scipy

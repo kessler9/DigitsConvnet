@@ -3,3 +3,6 @@ MNIST_Model/*
 *.idea
 venv
 venv/*
+*.log
+*.pyc
+
