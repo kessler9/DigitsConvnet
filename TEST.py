@@ -1,8 +1,9 @@
 #!/bin/python
 import numpy as np
 import tensorflow as tf
+from pprint import pprint
 from tensorflow.contrib import learn
-from MNIST_Convnet import cnn_model_fn
+from run import cnn_model_fn
 from scipy.misc import imread
 import os
 import sys
@@ -13,5 +14,9 @@ image = np.array([abs(x - 255.0) / 255.0 for x in imread(sys.argv[1], mode='L').
 
 results = mnist_classifier.predict(image)
 
-for result in results: print result
-
+for result in results:
+	if result['classes'] == int(sys.argv[1].split('.')[0]):
+		print "%s PASSED" % sys.argv[1]
+	else:
+		print "%s FAILED" % sys.argv[1]
+		pprint(result)
