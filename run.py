@@ -107,7 +107,7 @@ def main(unused_argv):
     x=train_data,
     y=train_labels,
     batch_size=300,
-    steps=100000,
+    steps=10000,
     monitors=[logging_hook]
   )
   metrics = {
