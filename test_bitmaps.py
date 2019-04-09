@@ -8,7 +8,9 @@ from scipy.misc import imread
 from glob import glob
 import os
 
-for file_name in glob('*.bmp'):
+file_names = glob('*.bmp')
+file_names.sort()
+for file_name in file_names:
 	mnist_classifier = learn.Estimator(model_fn=cnn_model_fn, model_dir=os.popen("pwd").read().replace('\n', '') + "/MNIST_Model")
 
 	image = np.array([abs(x - 255.0) / 255.0 for x in imread(file_name, mode='L').reshape(784)]).astype('float32')
